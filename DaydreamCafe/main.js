@@ -32,12 +32,6 @@ $(window).load(function () {
     // Set deeplink
     $.history.init(openPage);
 
-    // Dedect browser
-    if ($.browser.msie && $.browser.version < 9) {
-        audioSupport = false;
-        $('#audioControls').hide();
-    }
-
     if (mobileDevice) {
         normalFade = true;
         audioSupport = false;
